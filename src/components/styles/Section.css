@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Duru+Sans&family=Lato:ital,wght@0,300;0,700;1,100&family=Montserrat:wght@200;600&family=Poppins:wght@100;400;500&family=Roboto+Mono&family=Roboto:wght@500;900&family=Rubik:wght@800&display=swap');
+
+.main-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(216, 216, 216);
+    font-family: 'Poppins', sans-serif;
+    border: 7px solid black;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texts {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    width: 620px;
+}
+.texts h1 {
+    color: gray;
+}
+
+.texts .h1-big {
+    font-size: 60px;
+    color: rgb(61, 60, 60);
+}
+
+.texts p {
+    border-top: 2px solid grey;
+    color: gray;
+    text-transform: lowercase;
+}
+
+.text-button {
+    margin-top: 2.4rem;
+    padding: 14px 35px;
+    cursor: pointer;
+    background-color: rgb(59, 55, 55);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.image {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 39% 100%, 0% 50%, 36% 0);  
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 100%;
+}
+
+.image img {
+    margin-top: 5rem;
+    height:500px;
+    width: 600px;
+    object-fit: contain;
+}
+
+@media screen and (max-width:1200px) {
+
+    .texts h1 {
+        font-size: 15px;
+        color: gray;
+    }
+
+
+.texts .h1-big {
+    font-size: 40px;
+    color: rgb(61, 60, 60);
+}
+    
+    .text-button {
+        margin-top: 1rem;
+        padding: 12px 30px;
+    }
+    
+    .image {
+        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 39% 100%, 0% 50%, 36% 0);  
+        background-color: rgba(0, 0, 0, 0.596);
+    }
+    
+    .image img {
+        margin-top: 5rem;
+        height:420px;
+        width: 220px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:600px) {
+    .texts .h1-big {
+        font-size: 30px;
+        color: rgb(61, 60, 60);
+    }
+
+    .texts p {
+        border-top: 2px solid grey;
+        color: gray;
+        width: 70%;
+        text-transform: lowercase;
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+
+
+    .texts h1 {
+        font-size: 10px;
+        color: gray;
+    }
+
+    .texts .h1-big {
+        font-size: 15px;
+        color: rgb(61, 60, 60);
+    }
+
+    .texts p {
+        border-top: 2px solid grey;
+        color: gray;
+        text-transform: lowercase;
+        font-size: 8px;
+    }
+
+    .text-button {
+        margin-top: 1rem;
+        padding: 8px 25px;
+    }
+}

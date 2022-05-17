@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Duru+Sans&family=Lato:ital,wght@0,300;0,700;1,100&family=Montserrat:wght@200;600&family=Poppins:wght@100;400;500&family=Roboto+Mono&family=Roboto:wght@500;900&family=Rubik:wght@800&display=swap');
+
+.header {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+}   
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    
+}
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(53, 51, 51);
+}
+
+
+
+.ul-items {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+.ul-items li {
+    margin: 1rem;
+}
+.ul-items li a {
+    color: rgb(44, 40, 40);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ul-items li a:hover {
+    border-bottom: 3px solid #000;
+}
+
+
+
+.hamburger-icon {
+    display: flex;
+}
+.hamburger-icon .menu {
+    font-size: 35px;
+    color: rgb(141, 129, 129);
+    cursor: pointer;
+}
+
+
+.slider {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: 0;
+    z-index: 1;
+    right: -100%;
+    transition: 1s ease;
+}
+
+.slider .slider-ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+    list-style: none;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.slider-ul li {
+    border:  2px solid #fff;
+    padding: 25px;
+}
+
+.slider-ul li a {
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+    
+}
+
+
+.slider.active {
+    right: 0;
+    transition: 1s ease;
+}
+
+
+
+@media (max-width:1200px) {
+    .slider .slider-ul {
+        grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+        gap: 0rem;
+    }
+    .slider-ul li {
+        border:  2px solid #fff;
+        padding: 35px;
+    }
+    
+    .slider-ul li a {
+        font-size: 40px;
+        
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    
+    .logo {
+        margin-left: 2rem;
+    }
+    .logo h1 {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: rgb(53, 51, 51);
+    }
+    
+    
+    
+    .ul-items {
+    }
+    
+    .ul-items li {
+        margin: .5rem;
+    }
+    .ul-items li a {
+        font-size: 10px;
+    }
+
+    .hamburger-icon .menu {
+        font-size: 30px;
+        color: rgb(116, 101, 101);
+        cursor: pointer;
+    }
+
+    .slider .slider-ul {
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));        
+        gap: 0rem;
+        margin: 0 auto;
+    }
+    .slider-ul li {
+        padding: 45px;
+    }
+    
+    .slider-ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        
+    }
+    
+    
+    .slider.active {
+        right: 0;
+        transition: 1s ease;
+    }
+    
+}
+
+
+@media (max-width:450px) {
+
+
+    .slider .slider-ul {
+        gap: 0rem;
+        margin: 0 auto;
+    }
+
+    .ul-items li {
+        margin: 0rem;
+        display: flex;
+    }
+    .ul-items li a {
+        color: rgb(44, 40, 40);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 8px;
+    }
+
+    .hamburger-icon .menu {
+        font-size: 20px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .logo h1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:350px) {
+    .slider .slider-ul {
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));        
+        gap: 0rem;
+        margin: 0 auto;
+    }
+}

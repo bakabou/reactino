@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Duru+Sans&family=Lato:ital,wght@0,300;0,700;1,100&family=Montserrat:wght@200;600&family=Poppins:wght@100;400;500&family=Roboto+Mono&family=Roboto:wght@500;900&family=Rubik:wght@800&display=swap');
+
+
+.testimonials{
+    background-color: rgb(216, 212, 212);
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    border: 7px solid black;
+}
+.testimonials h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-top: 4rem;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    border:  4px solid #fff;
+    padding: 20px;
+}
+
+.cart img {
+    width: 30%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.cart p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 1rem;
+}
+.cart h5 {
+    margin-top: 3rem;
+    font-size: 10px;
+    line-height: 30px;
+    color: #fff;
+}
+
+@media (max-width:900px) {
+
+    .cart {
+        margin: 5px;
+        text-align: center;
+        align-items: center;
+        width: 300px;
+        border:  2px solid #000;
+        padding: 10px;
+    }
+    
+    .cart img {
+        width: 30%;
+        height: 10%;
+        border-radius: 50%;
+    }
+    
+    .cart p {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .cart h5 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    
+}
